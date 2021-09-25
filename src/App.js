@@ -1,4 +1,3 @@
-import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, ListGroup, ButtonGroup } from 'react-bootstrap';
 import Calendar from 'react-calendar';

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Progress Assistant",
+  "name": "Look forward, don't procrastinate.",
   "icons": [
     {
       "src": "favicon.ico",
