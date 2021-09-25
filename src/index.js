@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Dexie from 'dexie';
+
+const db = new Dexie('pa_database');
+db.version(1).stores({
+  courses: 'id',
+  assignments: 'id,course_id,due_date,finish_date,assignment_type'
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App db={db}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
